@@ -17,7 +17,7 @@ public class SpringbootDockerTestApplication {
 	
 	@RequestMapping("/")
 	public String home() {
-		
+		System.out.println("saas");
 	   return employeeDao.findAll().get(0).getName();
 	}	
 	public static void main(String[] args) {
